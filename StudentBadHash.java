@@ -1,1 +1,55 @@
+package assign09;
 
+/**
+  * A student object with poor hash function.
+  *
+  *@author Camden Lyon, Ibrahim Alasady
+  *@version 2026-11-11
+  */
+
+public class StudentBadHash {
+  private String firstName;
+  private String lastName;
+  private int studentID;
+
+/**
+  * Construct a student
+  *
+  */
+
+public StudentBadHash(String firstName, String lastName, int studentID) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.studentID = studentID;
+}
+
+/**
+  *Generates poor hash code using only first character
+  *
+  *@return hash code
+  */
+
+@Override 
+public int hashCode() {
+  return firstName.charAt(0);
+}
+
+/**
+  *Checks whether two students are equal.
+  */
+
+@Override
+pubilic boolean equals(Object obj) {
+  if (this == obj)
+    return true;
+
+  if (obj == null || getClass() != obj.getClass())
+    return false;
+
+  StudentBadHash other = (StudentBadHash) obj;
+
+  return studentID == other.studentID
+    && firstName.equals(other.firstName)
+    && lastName.equals(other.lastName);
+}
+}
