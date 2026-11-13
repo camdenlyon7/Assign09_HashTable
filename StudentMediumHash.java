@@ -14,7 +14,7 @@ public class StudentMediumHash {
   * Constructs a student
   *
   */
-public StudentMediumHash(String firstName, StringlastName, int studentID) {
+public StudentMediumHash(String firstName, String lastName, int studentID) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.studentID = studentID;
@@ -40,7 +40,7 @@ public boolean equals(Object obj) {
   if (this == obj)
     return true;
 
-  if (obj == null || getClass() !+ obj.getClass())
+  if (obj == null || getClass() != obj.getClass())
     return false;
 
   StudentMediumHash other = (StudentMediumHash) obj;
