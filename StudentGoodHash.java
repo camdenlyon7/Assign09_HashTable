@@ -17,7 +17,7 @@ public class StudentGoodHash {
 public StudentGoodHash(String firstName, String lastName, int studentID) {
   this.firstName = firstName;
   this.lastName = lastName;
-  thiss.studentID = studentID;
+  this.studentID = studentID;
 }
 
 /**
