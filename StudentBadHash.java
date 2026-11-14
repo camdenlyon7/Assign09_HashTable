@@ -18,7 +18,7 @@ public class StudentBadHash {
   *
   */
 
-public StudentBadHash(String firstName, String lastName, int studentID) {
+public StudentBadHash(int studentID, String firstName, String lastName) {
   this.studentID = studentID;
   this.firstName = firstName;
   this.lastName = lastName;
