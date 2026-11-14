@@ -7,17 +7,19 @@ package assign09;
   */
 
 public class StudentGoodHash {
+  private int studentID;
   private String firstName;
   private String lastName;
-  private int studentID;
+  
 
 /**
   * Constructs a student
   */
 public StudentGoodHash(String firstName, String lastName, int studentID) {
+  this.studentID = studentID;
   this.firstName = firstName;
   this.lastName = lastName;
-  this.studentID = studentID;
+  
 }
 
 /**
