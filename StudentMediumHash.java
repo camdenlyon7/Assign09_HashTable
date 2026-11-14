@@ -15,7 +15,7 @@ public class StudentMediumHash {
   * Constructs a student
   *
   */
-public StudentMediumHash(String firstName, String lastName, int studentID) {
+public StudentMediumHash(int studentID, String firstName, String lastName) {
   this.studentID = studentID;
   this.firstName = firstName;
   this.lastName = lastName;
