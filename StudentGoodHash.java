@@ -15,7 +15,7 @@ public class StudentGoodHash {
 /**
   * Constructs a student
   */
-public StudentGoodHash(String firstName, String lastName, int studentID) {
+public StudentGoodHash(int studentID, String firstName, String lastName) {
   this.studentID = studentID;
   this.firstName = firstName;
   this.lastName = lastName;
