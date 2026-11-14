@@ -116,7 +116,7 @@ public class HashTable<K, V> implements Map<K, V>{
 		int firstDeletedIndex = -1;
 		int i = 0;
 		while (true) {
-			int index = ((hash + i * i) % table.length);
+			int index = (int) (((long) hash + (long) i * i) % table.length);			
 			Object slot = table[index];
 			if (slot == null) {
 				int targetIndex;
