@@ -8,9 +8,10 @@ package assign09;
   */
 
 public class StudentBadHash {
+  private int studentID;
   private String firstName;
   private String lastName;
-  private int studentID;
+  
 
 /**
   * Construct a student
@@ -18,9 +19,10 @@ public class StudentBadHash {
   */
 
 public StudentBadHash(String firstName, String lastName, int studentID) {
+  this.studentID = studentID;
   this.firstName = firstName;
   this.lastName = lastName;
-  this.studentID = studentID;
+  
 }
 
 /**
